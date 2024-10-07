@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 
 namespace calculator
@@ -64,7 +64,7 @@ namespace calculator
             }
             else
             {
-                MessageBox.Show("Введено некорректное значение!");
+                MessageBox.Show("Incorrect value entered!");
             }
         }
 
@@ -80,7 +80,7 @@ namespace calculator
             }
             else
             {
-                MessageBox.Show("Введено некорректное значение!");
+                MessageBox.Show("Incorrect value entered!");
             }
         }
 
@@ -94,10 +94,10 @@ namespace calculator
                 case "*": result *= number; break;
                 case "/":
                     if (number != 0) result /= number;
-                    else MessageBox.Show("На ноль делить нельзя!");
+                    else MessageBox.Show("You can't divide by zero!");
                     break;
                 case "%": result = (result * number) / 100; break;
-                default: MessageBox.Show("Неизвестная операция!"); break;
+                default: MessageBox.Show("Unknown operation!"); break;
             }
             textBox11.TextBoxText = result.ToString();
             textBox12.TextBoxText += number.ToString();
@@ -116,12 +116,12 @@ namespace calculator
                 }
                 else
                 {
-                    MessageBox.Show("Невозможно вычислить квадратный корень из отрицательного числа!");
+                    MessageBox.Show("It is impossible to calculate the square root of a negative number!");
                 }
             }
             else
             {
-                MessageBox.Show("Введено некорректное значение!");
+                MessageBox.Show("Incorrect value entered!");
             }
         }
 
@@ -136,7 +136,7 @@ namespace calculator
             }
             else
             {
-                MessageBox.Show("Введено некорректное значение!");
+                MessageBox.Show("Incorrect value entered!");
             }
         }
 
@@ -153,12 +153,12 @@ namespace calculator
                 }
                 else
                 {
-                    MessageBox.Show("Невозможно вычислить 1/0!");
+                    MessageBox.Show("It's impossible to calculate 1/0!");
                 }
             }
             else
             {
-                MessageBox.Show("Введено некорректное значение!");
+                MessageBox.Show("Incorrect value entered!");
             }
         }
 
@@ -173,7 +173,7 @@ namespace calculator
             }
             else
             {
-                MessageBox.Show("Введено некорректное значение!");
+                MessageBox.Show("Incorrect value entered!");
             }
         }
 
